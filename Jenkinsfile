@@ -33,7 +33,7 @@ pipeline {
                 )
                 {
                 sh '''
-                echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-sangavi@17
+                echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
              
                 '''
                 }
